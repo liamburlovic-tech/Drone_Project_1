@@ -35,7 +35,7 @@ test/             Test procedures, checklists, flight-log summaries
 ```
 
 ## Toolchain
-Onshape · SimScale/FEA · OrcaSlicer · PX4 · QGroundControl · PX4 Flight Review · MAVSDK-Python · Ultralytics YOLO + TensorRT · JetPack 6
+Onshape · SimScale/FEA · Bambu Studio · PX4 · QGroundControl · PX4 Flight Review · MAVSDK-Python · Ultralytics YOLO + TensorRT · JetPack 6
 
 ## Safety and compliance
 FAA-registered, Remote ID broadcast module, flown within visual line of sight under FAA rules. Failsafes (RC loss, low battery, geofence) and a transmitter kill switch are verified on the bench before every new configuration flies. No payloads, weapons or effectors of any kind.

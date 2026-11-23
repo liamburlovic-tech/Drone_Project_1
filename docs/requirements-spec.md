@@ -1,6 +1,6 @@
 # Drone Requirements Specification — Phase 1 & 2
 **Project:** Custom-Frame ISR Quadcopter
-**Owner:** Liam | **Rev:** A | **Date:** 2026-11-17
+**Owner:** Liam | **Rev:** B | **Date:** 2026-11-23 (printer changed to Bambu Lab A1)
 **Status:** Draft for review
 
 ---
@@ -23,7 +23,7 @@ Build an **unarmed ISR (intelligence, surveillance, reconnaissance) demonstrator
 | C-1 | Total budget target: $500–1,000 (see the BOM for the real total and ways to cut it) |
 | C-2 | Companion computer: NVIDIA Jetson Orin Nano Super Developer Kit |
 | C-3 | Flight stack: PX4 Autopilot on a Pixhawk-standard flight controller |
-| C-4 | Printed parts must fit the Ender 3 V3 SE build volume (220 × 220 × 250 mm) and print in PLA or PETG (nozzle max 260 °C) |
+| C-4 | Printed parts must fit the Bambu Lab A1 build volume (256 × 256 × 256 mm) and print in PLA, PETG or TPU (hot end max 300 °C) |
 | C-5 | Use existing open-source stacks (PX4, MAVSDK/ROS 2, Ultralytics YOLO) and keep custom code small |
 | C-6 | All flights follow FAA rules (Section 4.8) |
 
@@ -39,7 +39,7 @@ Build an **unarmed ISR (intelligence, surveillance, reconnaissance) demonstrator
 |---|---|---|---|
 | AF-1 | Motor-to-motor diagonal of 450–500 mm, sized for 10-inch props | A proven size class for a 1.5–2 kg quad carrying a Jetson | I |
 | AF-2 | Frame = printed center hub and mounts + carbon-fiber tube arms (16 mm OD) | Arms are cheap to replace after crashes; printed hub shows design work | I |
-| AF-3 | Every printed part fits within 220 × 220 × 250 mm | Printer limit (C-4) | I |
+| AF-3 | Every printed part fits within 256 × 256 × 256 mm | Printer limit (C-4) | I |
 | AF-4 | All-up weight (AUW) ≤ 2.0 kg with battery and Jetson | Keeps thrust-to-weight and flight time in spec | T (scale) |
 | AF-5 | Arm-tip deflection ≤ 2 mm at max motor thrust | Stiff arms give clean control and IMU data | A (FEA) |
 | AF-6 | First arm bending natural frequency ≥ 20% away from the hover rotor frequency (~130–150 Hz, to be confirmed) | Avoids resonance that corrupts the IMU | A (FEA modal) + T (flight log FFT) |
