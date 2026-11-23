@@ -8,6 +8,11 @@ An **unarmed ISR (intelligence, surveillance, reconnaissance) demonstrator**: a 
 | **Phase 2 — Onboard tracking** | Jetson + YOLO detects a designated target and commands the drone to follow it | ⚪ Not started |
 | Phase 3 — GPS-denied navigation | Deferred | ⚪ |
 
+## Progress
+![Spend and requirement completion over time](tracking/progress.png)
+
+Tracked in [`tracking/`](tracking/): log purchases in `spend.csv`, and mark a requirement `verified` (with `date_verified` and evidence) in `requirements.csv`. On push to `main`, a GitHub Action redraws the chart.
+
 ## Milestones (verification gates)
 | Gate | Milestone |
 |---|---|
