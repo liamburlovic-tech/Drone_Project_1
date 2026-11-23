@@ -1,0 +1,9 @@
+gate,name,due_date
+G1,CAD + FEA,2026-12-14
+G2,Bench build,2027-01-15
+G3,First hover,2027-01-29
+G4,Flight tests,2027-02-19
+G5,Waypoint mission (Phase 1 done),2027-03-12
+G6,Jetson bench test,
+G7,Ground tracking test,
+G8,In-flight tracking (Phase 2 done),
