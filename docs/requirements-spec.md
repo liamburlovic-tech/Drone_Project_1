@@ -1,6 +1,6 @@
 # Drone Requirements Specification — Phase 1 & 2
 **Project:** Custom-Frame ISR Quadcopter
-**Owner:** Liam | **Rev:** B | **Date:** 2026-11-23 (printer changed to Bambu Lab A1)
+**Owner:** Liam | **Rev:** C | **Date:** 2026-11-25 (platform decision recorded: quad now, VTOL deferred)
 **Status:** Draft for review
 
 ---
@@ -15,6 +15,11 @@ Build an **unarmed ISR (intelligence, surveillance, reconnaissance) demonstrator
 | **Phase 2 — Onboard tracking** | Jetson detects a designated target and commands the drone to follow it | Holds a moving target in frame for ≥ 60 s with no pilot stick input |
 
 **Out of scope:** GPS-denied navigation (that's Phase 3, deferred), beyond-visual-line-of-sight flight, and any payload release, weapon or effector of any kind.
+
+### 1.1 Platform decision (2026-11-25)
+Quadcopter chosen over a VTOL fixed-wing (quadplane) for Phases 1–2. Reasons: faster path to a flying, tracking demo; mature PX4 multirotor support; simpler Phase 2 follow control; small test field is enough.
+
+**VTOL is on the backburner** as a possible later conversion. Most Phase 1–2 hardware would carry over (Pixhawk 6C + GPS, ELRS link, Remote ID, Jetson + camera, batteries, charger; the 2216 motors and 30A ESCs could serve as lift motors). A conversion would add a sectioned printed or foam wing with carbon spar, tail, pusher motor and servos. Low-cost prep while building the quad: fly PX4 SITL's standard VTOL model and do wing-sizing hand calcs.
 
 ## 2. Constraints
 
